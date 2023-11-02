@@ -6,6 +6,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/intro.css"
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 1);
 ?>
 
+<!-- <script>
+$(document).ready(function(){
+    $('#intro_pop').delay(1000).fadeOut(500);
+})
+</script> -->
+
 <div class="intro_wrap" id="intro_pop">
     <div class="intro_wrap_in">
         <div class="intro_tt_box">

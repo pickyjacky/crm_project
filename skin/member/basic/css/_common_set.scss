@@ -18,7 +18,7 @@ $pc_font_ss: 0.5rem;
 
 //tablet
 $tb_menu_wid: 74%;
-$tb_font_lg: 3.2vw;
+$tb_font_lg: 3.7vw;
 $tb_font_rl: 2.5vw;
 $tb_font_sl: 2vw;
 $tb_font_rr: 1.7vw;
@@ -104,4 +104,16 @@ $font-family3: 'TheJamsil', "나눔고딕", NanumGothic, "Nanum Gothic","돋움"
   background-repeat:$repeat;
   background-size: $bg_size;
   background-position: $bg_pos;
+}
+
+@mixin tablet{
+  @media (width < 1024px){
+      @content;
+  }
+}
+
+@mixin mobile{
+  @media (width < 768px){
+      @content;
+  }
 }
