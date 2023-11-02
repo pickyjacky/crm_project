@@ -1,0 +1,30 @@
+@import url("./font.css");
+/* data-scroll */
+.intro_wrap {
+  position: fixed;
+  background: #e7f2ff;
+  z-index: 100;
+}
+.intro_wrap_in {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.intro_wrap_in .intro_tt_box {
+  padding-top: 10%;
+}
+.intro_wrap_in .intro_tt_box .text {
+  color: #222;
+  font-size: 2.65rem;
+  line-height: 1.3;
+  margin-top: 1.8%;
+}
+.intro_wrap_in .intro_tt_box .text strong {
+  color: #7bb7ff;
+}
+.intro_wrap_in .intro_logo2 {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
