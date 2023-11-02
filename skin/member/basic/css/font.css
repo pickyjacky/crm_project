@@ -1,0 +1,191 @@
+@charset 'utf-8';
+
+/* NanumSquareNeo */
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./font/NanumSquareNeoTTF-aLt.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./font/NanumSquareNeoTTF-bRg.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./font/NanumSquareNeoTTF-cBd.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('./font/NanumSquareNeoTTF-dEb.woff2') format('woff2');
+  font-weight: 900;
+}
+
+/* Pretendard */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Thin.woff2') format('woff2');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-ExtraBold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./font/Pretendard-Black.woff2') format('woff2');
+  font-weight: 800;
+}
+
+/* NotoSans */
+@font-face {
+  font-family: 'Noto';
+  font-weight: 800;
+  src: url('./font/NotoSansKR-Black.eot');
+  src: url('./font/NotoSansKR-Black.eot?#iefix') format('embedded-opentype'),
+        url('./font/NotoSansKR-Black.woff2') format('woff2'),
+        url('./font/NotoSansKR-Black.woff') format('woff'),
+        url('./font/NotoSansKR-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto';
+  font-weight: 700;
+  font-style: bold;
+  src: url('./font/NotoSansKR-Bold.eot');
+  src: url('./font/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/NotoSansKR-Bold.woff2') format('woff2'),
+        url('./font/NotoSansKR-Bold.woff') format('woff'),
+        url('./font/NotoSansKR-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto';
+  font-weight: 500;
+  src: url('./font/NotoSansKR-Medium.eot');
+  src: url('./font/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./font/NotoSansKR-Medium.woff2') format('woff2'),
+        url('./font/NotoSansKR-Medium.woff') format('woff'),
+        url('./font/NotoSansKR-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./font/NotoSansKR-Regular.eot');
+  src: url('./font/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/NotoSansKR-Regular.woff2') format('woff2'),
+        url('./font/NotoSansKR-Regular.woff') format('woff'),
+        url('./font/NotoSansKR-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto';
+  font-weight: 300;
+  src: url('./font/NotoSansKR-Light.eot');
+  src: url('./font/NotoSansKR-Light.eot?#iefix') format('embedded-opentype'),
+        url('./font/NotoSansKR-Light.woff2') format('woff2'),
+        url('./font/NotoSansKR-Light.woff') format('woff'),
+        url('./font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+/* GmarketSans */
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('./font/GmarketSansTTFLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: light;
+}
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('./font/GmarketSansTTFMedium.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('./font/GmarketSansTTFBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* SDGothicNeo */
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoT.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoUL.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoL.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoR.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoM.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoSB.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoB.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoEB.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'SDGothicNeo';
+  src: url('./font/AppleSDGothicNeoH.ttf') format('truetype');
+  font-weight: 900;
+}
+
+/* EliceDigitalBaeum */
+@font-face {
+  font-family: 'EliceDigitalBaeum';
+  src: url('./font/EliceDigitalBaeumOTF_Bold.otf') format('opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'EliceDigitalBaeum';
+  src: url('./font/EliceDigitalBaeumOTF_Regular.otf') format('opentype');
+  font-weight: Regular;
+}
