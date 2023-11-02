@@ -5,6 +5,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 0);
 ?>
 
+<div class="intro_wrap" id="intro_pop">
+    <div class="intro_tt_box">
+        <img src="/skin/member/basic/img/intro_logo.png" alt="고운미소로고">
+        <p class="text">안전하고 믿을 수 있는<br><strong>분야별 전문 의료진</strong></p>
+    </div> 
+    <div class="intro_logo2">
+        <img class="intro_logo2" src="/skin/member/basic/img/intro_logo2.png" alt="연세고운미소 삼성점">
+    </div>
+</div>
+
 <!-- 로그인 시작 { -->
 <div id="mb_login" class="mbskin">
     <div class="mbskin_box">
