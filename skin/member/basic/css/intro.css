@@ -14,7 +14,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 19%;
+  top: 24%;
   width: 100%;
   text-align: center;
 }
@@ -30,9 +30,9 @@
 }
 .intro_wrap_in .intro_tt_box .text {
   color: #222;
-  font-size: 3rem;
-  line-height: 1.3;
-  margin-top: 25px;
+  font-size: 2.65rem;
+  line-height: 1.4;
+  margin-top: 20px;
 }
 .intro_wrap_in .intro_tt_box .text strong {
   color: #7bb7ff;
@@ -45,7 +45,6 @@
 @media (width < 768px) {
   .intro_wrap_in .intro_tt_box .text {
     font-size: 7.85vw;
-    margin-top: 20px;
   }
 }
 .intro_wrap_in .intro_logo2 {
