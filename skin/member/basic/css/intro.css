@@ -16,6 +16,7 @@
   transform: translateX(-50%);
   top: 19%;
   width: 100%;
+  text-align: center;
 }
 @media (width < 1024px) {
   .intro_wrap_in .intro_tt_box img {
