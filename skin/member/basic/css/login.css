@@ -33,6 +33,10 @@
   background: #7bb7ff;
   margin-bottom: 45px;
 }
+#mb_login .mbskin_box #login_fs .btn_submit:hover {
+  color: #fff;
+  background: #5a9cec;
+}
 #mb_login .mbskin_box #login_fs .login_pp {
   font-size: 1rem;
   color: #7bb7ff;

@@ -30,6 +30,10 @@
                 font-size: $pc_font_r;
                 background: $main_blue;
                 margin-bottom: 45px;
+                &:hover {
+                    color: #fff;
+                    background: $dark_blue;
+                }
             }
             .login_pp{
                 font-size: $pc_font_sr;
