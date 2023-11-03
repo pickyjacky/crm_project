@@ -1,2 +1,58 @@
 @import url("./font.css");
 /* data-scroll */
+#mb_login {
+  background: #e7f2ff;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+#mb_login .mbskin_box {
+  border: none;
+  background: none;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18%;
+}
+#mb_login .mbskin_box .login_logo img {
+  width: 55%;
+}
+#mb_login .mbskin_box #login_fs {
+  padding: 35px 0 0;
+}
+#mb_login .mbskin_box #login_fs .frm_input {
+  margin-bottom: 18px;
+  padding: 5px 10px;
+  height: 50px;
+  font-size: 1.1rem;
+}
+#mb_login .mbskin_box #login_fs .btn_submit {
+  height: 50px;
+  font-size: 1.1rem;
+  background: #7bb7ff;
+  margin-bottom: 45px;
+}
+#mb_login .mbskin_box #login_fs .login_pp {
+  font-size: 1rem;
+  color: #7bb7ff;
+}
+#mb_login .mbskin_box input::-moz-placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+#mb_login .mbskin_box input::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+}
+#mb_login .login_logo2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+}
+@media (width < 1024px) {
+  #mb_login .login_logo2 img {
+    width: 80%;
+  }
+}

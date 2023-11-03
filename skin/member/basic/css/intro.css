@@ -50,8 +50,8 @@
 .intro_wrap_in .intro_logo2 {
   position: absolute;
   left: 50%;
-  bottom: 5%;
   transform: translateX(-50%);
+  bottom: 5%;
 }
 @media (width < 1024px) {
   .intro_wrap_in .intro_logo2 img {

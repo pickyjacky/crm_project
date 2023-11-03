@@ -1,2 +1,56 @@
 @charset "utf-8";
 @import "common_set";
+
+#mb_login {
+    background: $intro_bg;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    .mbskin_box {
+        border: none;
+        background: none;
+        width: 300px;
+        @include position_cnt;
+        top: 18%;
+
+        .login_logo img {
+            width: 55%
+        }
+
+        #login_fs{
+            padding: 35px 0 0;
+            .frm_input {
+                margin-bottom: 18px;
+                padding: 5px 10px;
+                height: 50px;
+                font-size: $pc_font_r;
+            }
+            .btn_submit {
+                height: 50px;
+                font-size: $pc_font_r;
+                background: $main_blue;
+                margin-bottom: 45px;
+            }
+            .login_pp{
+                font-size: $pc_font_sr;
+                color: $main_blue;
+            }
+        }
+        
+        input::placeholder{
+            text-align: center;
+            font-size: $pc_font_r;
+        }
+    }
+
+    
+    .login_logo2{
+        @include position_cnt;
+        bottom: 5%;
+        img {
+            @include tablet {
+                width: 80%;
+            }
+        }
+    }
+}

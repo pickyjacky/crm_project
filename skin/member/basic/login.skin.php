@@ -3,8 +3,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/intro.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/login.css">', 1);
-add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 2);
+add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 1);
+add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/login.css">', 2);
 ?>
 
 <script>
@@ -28,12 +28,9 @@ $(document).ready(function(){
 <!-- 로그인 시작 { -->
 <div id="mb_login" class="mbskin">
     <div class="mbskin_box">
-        <h1><?php echo $g5['title'] ?></h1>
-        <div class="mb_log_cate">
-            <h2 class="login_logo">
-                <img src="/skin/member/basic/img/logo.png" alt="logo">
-            </h2>
-        </div>
+        <h2 class="login_logo">
+            <img src="/skin/member/basic/img/logo.png" alt="logo">
+        </h2>
         <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post">
             <input type="hidden" name="url" value="<?php echo $login_url ?>">
             <fieldset id="login_fs">
@@ -43,13 +40,14 @@ $(document).ready(function(){
                 <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
                 <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="전화번호">
                 <button type="submit" class="btn_submit">로그인</button>
-            </fieldset> 
+                <a class="login_pp" href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보 처리방침</a>
+            </fieldset>
         </form>
-        <div class="login_logo2">
-            <a href="/">
-                <img src="/skin/member/basic/img/logo2.png" alt="연세고운미소 삼성점">
-            </a>
-        </div>
+    </div>
+    <div class="login_logo2">
+        <a href="/">
+            <img src="/skin/member/basic/img/logo2.png" alt="연세고운미소 삼성점">
+        </a>
     </div>
 </div>
 

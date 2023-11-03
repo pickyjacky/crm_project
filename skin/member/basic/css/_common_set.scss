@@ -11,8 +11,8 @@ $pc_font_lg: 3rem;
 $pc_font_rl: 2.65rem;
 $pc_font_sl: 2rem;
 $pc_font_rr: 1.75rem;
-$pc_font_r: 1rem;
-$pc_font_sr: 0.85rem;
+$pc_font_r: 1.1rem;
+$pc_font_sr: 1rem;
 $pc_font_s: 0.6rem;
 $pc_font_ss: 0.5rem;
 
@@ -104,6 +104,12 @@ $font-family3: 'TheJamsil', "나눔고딕", NanumGothic, "Nanum Gothic","돋움"
   background-repeat:$repeat;
   background-size: $bg_size;
   background-position: $bg_pos;
+}
+
+@mixin position_cnt{ 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @mixin tablet{

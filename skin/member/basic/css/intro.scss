@@ -10,9 +10,7 @@
         width: 100vw;
         height: 100vh;
         .intro_tt_box {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            @include position_cnt;
             top: 24%;
             width: 100%;
             text-align: center;
@@ -42,10 +40,8 @@
             }
         }
         .intro_logo2{
-            position: absolute;
-            left: 50%;
+            @include position_cnt;
             bottom: 5%;
-            transform: translateX(-50%);
             img {
                 @include tablet {
                     width: 80%;
