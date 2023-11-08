@@ -34,9 +34,11 @@
 }
 #mb_login .mbskin_box #login_fs .frm_input {
   margin-bottom: 18px;
-  padding: 5px 10px;
+  padding: 5px 13px;
   height: 50px;
   font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  background-image: unset !important;
 }
 @media (width < 768px) {
   #mb_login .mbskin_box #login_fs .frm_input {
@@ -47,6 +49,20 @@
 #mb_login .mbskin_box #login_fs .frm_input:focus {
   border: 1px solid #7bb7ff;
   box-shadow: 0px 0px 8px rgba(194, 222, 255, 0.5) inset;
+}
+#mb_login .mbskin_box #login_fs .password_wrap {
+  position: relative;
+}
+#mb_login .mbskin_box #login_fs .password_wrap i {
+  position: absolute;
+  top: 26%;
+  left: 88%;
+  color: gray;
+}
+@media (width < 768px) {
+  #mb_login .mbskin_box #login_fs .password_wrap i {
+    top: 23%;
+  }
 }
 #mb_login .mbskin_box #login_fs .btn_submit {
   height: 50px;

@@ -3,8 +3,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/intro.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 1);
-add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/login.css">', 2);
+add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/css/login.css">', 0);
 ?>
 
 <script>
@@ -38,7 +38,10 @@ $(document).ready(function(){
                 <label for="login_id" class="sound_only">회원아이디<strong class="sound_only"> 필수</strong></label>
                 <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="차트번호">
                 <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
-                <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="전화번호">
+                <div class="password_wrap">
+                    <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="전화번호">
+                    <i id="toggle_pw" class="fa fa-eye fa-lg"></i>
+                </div>
                 <button type="submit" class="btn_submit">로그인</button>
                 <a class="login_pp" href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보 처리방침</a>
             </fieldset>
@@ -59,5 +62,21 @@ $(document).ready(function(){
         }
         return false;
     }
+
+    const pwInput = document.getElementById('login_pw');
+    const togglePw = document.getElementById('toggle_pw');
+
+    togglePw.addEventListener('click', function () {
+        if (pwInput.type === 'password') {
+            pwInput.type = 'text';
+            togglePw.classList.remove('fa-eye');
+            togglePw.classList.add('fa-eye-slash'); 
+        } else {
+            pwInput.type = 'password';
+            togglePw.classList.remove('fa-eye-slash'); 
+            togglePw.classList.add('fa-eye');
+        }
+    });
+
 </script>
 <!-- } 로그인 끝 -->

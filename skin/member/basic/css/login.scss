@@ -27,9 +27,11 @@
             padding: 35px 0 0;
             .frm_input {
                 margin-bottom: 18px;
-                padding: 5px 10px;
+                padding: 5px 13px;
                 height: 50px;
                 font-size: $pc_font_r;
+                letter-spacing: 0.2px;
+                background-image: unset !important;
                 @include mobile {
                     height: 40px;
                     font-size: $pc_font_sr;
@@ -37,6 +39,18 @@
                 &:focus {
                     border: 1px solid $main_blue;
                     box-shadow: 0px 0px 8px rgba(194, 222, 255, 0.5) inset;
+                }
+            }
+            .password_wrap {
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 26%;
+                    left: 88%;
+                    color: gray;
+                    @include mobile {
+                        top: 23%;
+                    }
                 }
             }
             .btn_submit {
