@@ -12,9 +12,15 @@
         width: 300px;
         @include position_cnt;
         top: 18%;
-
+        @include mobile {
+            top: 14%;
+            width: 250px;
+        }
         .login_logo img {
-            width: 55%
+            width: 55%;
+            @include mobile {
+                width: 50%;
+            }
         }
 
         #login_fs{
@@ -24,8 +30,12 @@
                 padding: 5px 10px;
                 height: 50px;
                 font-size: $pc_font_r;
+                @include mobile {
+                    height: 40px;
+                    font-size: $pc_font_sr;
+                }
                 &:focus {
-                    border: 1px solid $main_skyblue;
+                    border: 1px solid $main_blue;
                     box-shadow: 0px 0px 8px rgba(194, 222, 255, 0.5) inset;
                 }
             }
@@ -34,6 +44,11 @@
                 font-size: $pc_font_r;
                 background: $main_blue;
                 margin-bottom: 45px;
+                @include mobile {
+                    height: 40px;
+                    font-size: $pc_font_sr;
+                    margin-bottom: 40px;
+                }
                 &:hover {
                     color: #fff;
                     background: $dark_blue;
@@ -42,12 +57,18 @@
             .login_pp{
                 font-size: $pc_font_sr;
                 color: $main_blue;
+                @include mobile {
+                    font-size: 0.9rem;
+                }
             }
         }
         
         input::placeholder{
             text-align: center;
             font-size: $pc_font_r;
+            @include mobile {
+                font-size: $pc_font_sr;
+            }
         }
     }
 

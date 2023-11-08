@@ -15,8 +15,19 @@
   transform: translateX(-50%);
   top: 18%;
 }
+@media (width < 768px) {
+  #mb_login .mbskin_box {
+    top: 14%;
+    width: 250px;
+  }
+}
 #mb_login .mbskin_box .login_logo img {
   width: 55%;
+}
+@media (width < 768px) {
+  #mb_login .mbskin_box .login_logo img {
+    width: 50%;
+  }
 }
 #mb_login .mbskin_box #login_fs {
   padding: 35px 0 0;
@@ -27,8 +38,14 @@
   height: 50px;
   font-size: 1.1rem;
 }
+@media (width < 768px) {
+  #mb_login .mbskin_box #login_fs .frm_input {
+    height: 40px;
+    font-size: 1rem;
+  }
+}
 #mb_login .mbskin_box #login_fs .frm_input:focus {
-  border: 1px solid #c3ddfe;
+  border: 1px solid #7bb7ff;
   box-shadow: 0px 0px 8px rgba(194, 222, 255, 0.5) inset;
 }
 #mb_login .mbskin_box #login_fs .btn_submit {
@@ -36,6 +53,13 @@
   font-size: 1.1rem;
   background: #7bb7ff;
   margin-bottom: 45px;
+}
+@media (width < 768px) {
+  #mb_login .mbskin_box #login_fs .btn_submit {
+    height: 40px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
 }
 #mb_login .mbskin_box #login_fs .btn_submit:hover {
   color: #fff;
@@ -45,6 +69,11 @@
   font-size: 1rem;
   color: #7bb7ff;
 }
+@media (width < 768px) {
+  #mb_login .mbskin_box #login_fs .login_pp {
+    font-size: 0.9rem;
+  }
+}
 #mb_login .mbskin_box input::-moz-placeholder {
   text-align: center;
   font-size: 1.1rem;
@@ -52,6 +81,14 @@
 #mb_login .mbskin_box input::placeholder {
   text-align: center;
   font-size: 1.1rem;
+}
+@media (width < 768px) {
+  #mb_login .mbskin_box input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  #mb_login .mbskin_box input::placeholder {
+    font-size: 1rem;
+  }
 }
 #mb_login .login_logo2 {
   position: absolute;
