@@ -33,8 +33,9 @@
                 letter-spacing: 0.2px;
                 background-image: unset !important;
                 @include mobile {
-                    height: 40px;
+                    height: 48px;
                     font-size: $pc_font_sr;
+                    margin-bottom: 15px;
                 }
                 &:focus {
                     border: 1px solid $main_blue;
@@ -59,7 +60,7 @@
                 background: $main_blue;
                 margin-bottom: 45px;
                 @include mobile {
-                    height: 40px;
+                    height: 48px;
                     font-size: $pc_font_sr;
                     margin-bottom: 40px;
                 }
