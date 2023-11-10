@@ -1,10 +1,21 @@
 @charset "utf-8";
 
+/* header */
+.header {
+    padding: 30px 120px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
 /* 내용관리 */
 #ctt {margin:10px 0;padding:50px 120px;background:#fff; color: #333;}
 .ctt_admin {text-align:right}
 #ctt header h1 {position:absolute;font-size:40px;line-height:1.5;overflow:hidden;}
+
 #ctt_con {padding:100px 0;line-height:1.6em;}
+#ctt h2 {
+    font-size: 28px;
+    color: #333;
+}
 #ctt_con p {
     font-size: 17px;
     line-height: 1.6em;
@@ -14,12 +25,22 @@
 .ctt_img {text-align:center}
 
 @media (max-width:1400px) {
+    .header {
+        padding: 25px 60px;
+    }
     #ctt {
         padding: 50px 60px;
     }
 }
 
 @media (max-width:767px) {
+    .header {
+        padding: 20px 40px;
+    }
+    .header img {
+        width: 50%;
+        max-width: max-content;
+    }
     #ctt {
         padding: 40px;
     }
@@ -29,6 +50,10 @@
     }
     #ctt_con {
         padding: 70px 0;
+    }
+    #ctt h2 {
+        font-size: 18px;
+        line-height: 32px;
     }
     #ctt_con p {
         font-size: 14px;
